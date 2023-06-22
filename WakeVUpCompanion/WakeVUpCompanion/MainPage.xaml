@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WakeVUpCompanion"
+             x:Class="WakeVUpCompanion.MainPage" BackgroundImageSource="background.jpg">
+
+    <StackLayout>
+        <Label Text="Set alarm time" HorizontalOptions="Center" />
+        <TimePicker x:Name="AlarmTimePicker" Time="08:30:00" Format="T" />
+        <Button Text="Start Ambience" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Clicked="StartAmbience_Clicked" />
+        <Button Text="Stop Ambience" HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="StopAmbience_Clicked" />
+        <Button Text="Set Alarm" HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="SetAlarm_Clicked" />
+    </StackLayout>
+
+</ContentPage>
